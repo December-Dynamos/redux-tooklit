@@ -1,5 +1,6 @@
 import CounterApp from './Components/CounterApp';
 import SongList from './Components/SongList';
+import SongDetails from './Components/SongDetails';
 
 
 const App = () => {
@@ -7,7 +8,16 @@ const App = () => {
     <div>
       
       <CounterApp />
-      <SongList />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
+        <SongList />
+        <SongDetails />
+      </div>
+     
 
     </div>
   )
